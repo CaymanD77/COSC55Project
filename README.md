@@ -13,3 +13,30 @@ We are planning to do our research project around cloud services to securely sto
 5. AWS Lambda
 
 ## References and Notes:
+### AWS Secrets Manager
+- [AWS Secrets-Manager](https://aws.amazon.com/secrets-manager/)
+- [Documentation](https://docs.aws.amazon.com/secretsmanager/)
+- [Tutorial](https://www.youtube.com/watch?v=Y3Gn_iP3FlE&ab_channel=AWSDevelopers)
+- AWS Secrets Manager is a credential management tool that manages, retrieves, and rotates cybersecurity aspects such as credentials and API Keys. By learning how to use AWS Secrets Manager, we will be able to fundamentally understand how to store identified and accessed credentials, work with an encryption and key management system, and use AWS Lambda to rotate the “secrets” (encryptions).
+
+### AWS Key Management Service
+- [Documentation](https://docs.aws.amazon.com/kms/)
+- [Good Practices](https://d1.awsstatic.com/whitepapers/aws-kms-best-practices.d4a0ce4f6129a07a86750a47d91ae96623ac1e2f.pdf)
+- The AWS Key Management Service helps with creating and controlling the keys used for encrypting your data. The service allows you to create, use, and manage your keys across most AWS services and applications. By becoming efficient in the use of AWS Key Management System, we can learn how to be better at controlling our keys and keeping them secure. We can also learn how efficiently managing your keys can make cybersecurity and life in general much easier.
+
+### AWS Identify and Access Management
+- [Documentation](https://docs.aws.amazon.com/iam/)
+- [Good Practices](https://community.aws/content/2eNIfFtxYqnMxkMBeaIvftruqcb/an-introductory-guide-to-aws-identity-and-access-management)
+- Through the use of AWS Identify and Access Management, we will learn how to better be able to control who can access what services with an AWS/cloud environment. AWS IAM will assist us with creating and managing user access groups, as well as changing their permissions. This is a fairly simple thing to add to environments that can greatly increase security by not allowing users to see/access what they are not supposed to see/access.
+
+### AWS Certificate Manager
+- [Overview](https://aws.amazon.com/certificate-manager/)
+- [Documentation](https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html)
+- [K21 Academy](https://k21academy.com/amazon-web-services/aws-certificate-manager-acm/)
+- [Additional Notes](https://aws.amazon.com/compare/the-difference-between-ssl-and-tls/)
+- AWS Certificate manager is a tool that enables the management of SSL and TLS certificates, where SSL and TLS are , “..communication protocols that encrypt data between servers, applications, users, and systems…authenticate two parties connected over a network so they can exchange data securely,” The certificate manager allows us to access/obtain certificates for our project and additionally use key management services in AWS. The references above give us the initial tools for understanding how the Certificate Manager works, with in depth basics. We will use the the Certificate manager to authenticate, store, and manage certificates in our project.
+
+### AWS Lambda
+- [Documentation](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
+- [Tutorial](https://www.youtube.com/watch?v=97q30JjEq9Y&ab_channel=Simplilearn)
+- Part of our project focuses on the rotation of API keys and database credentials, which can be done with a system such as Lambda, that can run servers periodically when necessary. Lambda will “rotate” our targets (credentials, keys, etc) on a schedule, so that encryption is secure.
