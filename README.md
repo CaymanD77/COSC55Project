@@ -62,10 +62,10 @@ We are planning to do our research project around cloud services to securely sto
 ### Setup Security Groups
 #### Engineering EC2
 - Inbound:
-      -  Allow SSH from the IT subnet
-      -  Allow HTTP and HTTPS
+  - Allow SSH from the IT subnet
+  - Allow HTTP and HTTPS
 - Outbound:
-      -  Allow all
+  - Allow all
 #### IT Management EC2
 - Inbound
   - Allow SSH from the IT subnet
