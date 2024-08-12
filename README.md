@@ -40,3 +40,9 @@ We are planning to do our research project around cloud services to securely sto
 - [Documentation](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
 - [Tutorial](https://www.youtube.com/watch?v=97q30JjEq9Y&ab_channel=Simplilearn)
 - Part of our project focuses on the rotation of API keys and database credentials, which can be done with a system such as Lambda, that can run servers periodically when necessary. Lambda will “rotate” our targets (credentials, keys, etc) on a schedule, so that encryption is secure.
+
+----------------------------------------------------------------------------------------------------------------------
+# MILESTONE 2 - SYSTEM DESIGN
+
+## Task 1 
+- [Diagram](https://app.diagrams.net/#G1ricNxPyogxmwQ68vow6gy-KywtgoFd9G#%7B%22pageId%22%3A%22vfPON62Yxj50zmF4qmGF%22%7D)
