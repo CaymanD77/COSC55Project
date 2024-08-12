@@ -45,4 +45,36 @@ We are planning to do our research project around cloud services to securely sto
 # MILESTONE 2 - SYSTEM DESIGN
 
 ## Task 1 
-- [Diagram](https://app.diagrams.net/#G1ricNxPyogxmwQ68vow6gy-KywtgoFd9G#%7B%22pageId%22%3A%22vfPON62Yxj50zmF4qmGF%22%7D)
+- ![Project Milestone 2 drawio](https://github.com/user-attachments/assets/93277000-95ce-4976-9177-134c03492b07)
+- [Link](https://drive.google.com/file/d/1ricNxPyogxmwQ68vow6gy-KywtgoFd9G/view?usp=sharing)
+
+## Task 2
+*Initialize AMI Templates
+  -  Ubuntu Server for application servers
+  -  Amazon Linux 2 for management servers
+*Establish SSH Keys
+  -  Create Unique access keys for each department
+  -  Store the SSH keys securely using AWS Secrets Manager
+*Setup VPC
+  -  Select CIDR Block
+  -  Create a subnet for engineering and a subnet for it
+  -  Configure routing tables to manage traffic flow between the subnets and the internet gateway
+*Setup Security Groups
+  -  Engineering EC2
+    - Inbound
+      -  Allow SSH from the IT subnet
+      -  Allow HTTP and HTTPS
+    - Outbound
+      -  Allow all
+  -  IT Management EC2
+    - Inbound
+      -  Allow SSH from the IT subnet
+    - Outbound
+      -  Allow all
+  - S3 Buckets - Database
+    -  Allow access from the IT subnet and specific roles
+*Implement Key Management Service
+  -  Use KMS to create and manage encryption keys for securing data in S3 buckets and Secrets Manager.
+*Implement AWS Certificate Manager and AWS Lambda
+
+
