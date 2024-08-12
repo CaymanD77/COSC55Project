@@ -67,9 +67,9 @@ We are planning to do our research project around cloud services to securely sto
 - Outbound:
   - Allow all
 #### IT Management EC2
-- Inbound
+- Inbound:
   - Allow SSH from the IT subnet
-- Outbound
+- Outbound:
   - Allow all
 #### S3 Buckets - Database
 - Allow access from the IT subnet and specific roles
