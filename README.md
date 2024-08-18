@@ -50,8 +50,8 @@ We are planning to do our research project around cloud services to securely sto
 
 ## Task 2
 ### Initialize AMI Templates
-- Ubuntu Server for application servers
-- Amazon Linux 2 for management servers
+- Ubuntu Servers for applications
+- Amazon Linux for management server
 ### Establish SSH Keys
 - Create Unique access keys for each department
 - Store the SSH keys securely using AWS Secrets Manager
@@ -60,13 +60,13 @@ We are planning to do our research project around cloud services to securely sto
 - Create a subnet for engineering and a subnet for it
 - Configure routing tables to manage traffic flow between the subnets and the internet gateway
 ### Setup Security Groups
-#### Engineering EC2
+#### Application EC2s
 - Inbound:
   - Allow SSH from the IT subnet
   - Allow HTTP and HTTPS
 - Outbound:
   - Allow all
-#### IT Management EC2
+#### IT Management Ubuntu
 - Inbound:
   - Allow SSH from the IT subnet
 - Outbound:
