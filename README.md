@@ -97,11 +97,11 @@ We were able to set up a VPC named "Main," for our admin/management server.
 <img width="718" alt="Screenshot 2024-08-19 at 6 17 41 PM" src="https://github.com/user-attachments/assets/58b8326f-3417-4aa4-9af4-478654349339">
 - The VPC worked with the three different subnets (Admin/Management (private subnet), IT and Engineering (both public)) with route tables meant to route network traffic to resources.
 - ** * We were unable to proceed to connect our Instances to our VPC due to lack of permissions. From here, we noted that maybe a VPC was not possible, and rerouted to work on having only the Security Groups as a means of providing access among the various subnets * **
-- ![Issue from Route 53 Firewall](<img width="175" alt="Screenshot 2024-08-19 at 6 24 29 PM" src="https://github.com/user-attachments/assets/bac5df40-41f8-4011-8bf4-708734a3fe1e">)
+<img width="175" alt="Screenshot 2024-08-19 at 6 24 29 PM" src="https://github.com/user-attachments/assets/bac5df40-41f8-4011-8bf4-708734a3fe1e">
 - * The issue was Route 53. *
  
 - ** We additionally had issues IAM setup, saying that we lacked authorization/credentials. **
-- ![IAM Access Denied](<img width="633" alt="Screenshot 2024-08-19 at 6 27 07 PM" src="https://github.com/user-attachments/assets/b2d2dc60-4e14-4ed4-be68-3c2eb552e631">)
+<img width="633" alt="Screenshot 2024-08-19 at 6 27 07 PM" src="https://github.com/user-attachments/assets/b2d2dc60-4e14-4ed4-be68-3c2eb552e631">
 - Our goal was to create a role for "workers" in our mock company to access the subnets using identity access credentials managed through IAM to provide security.
 
 -  ** We additionally ran into issues with the Key management Service ** 
