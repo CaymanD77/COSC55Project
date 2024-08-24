@@ -87,27 +87,35 @@ We are planning to do our research project around cloud services to securely sto
 - SSH Keys created and system management system established
 - Admin/Management Server would manage the keys and require Engineering/IT subnet "workers" to go through admin server to be able to log in (for further encryption/protection)
 ### Setting Up Buckets
+- While creating and accessing the buckets themselves was straightforward and proved successfull, We ran into issues trying to modify the accessibility of said buckets. We ran into these issues due to a lack of permissions error. We that initializing the buckets was enough for now, and that we would return to them later and try to modify their permissions so that only certain departments could access certain buckets.
+![buckets1](https://github.com/user-attachments/assets/a094a8bf-0ab1-4186-a02a-8397d3a46f31)
+![buckets2](https://github.com/user-attachments/assets/dae21d0e-1d86-4a02-b02c-80b192b98f9d)
 
 ### Security Groups
 - We set up the security groups in a way that IT was able to have access to all servers and systems. From the IT Management server only, you can SSH into the Engineering applications server to make modifications, or the Admin/management server. Both the Engineering applications server and the Admin/managment server accept inbound from http and https to allow engineers and those working in management to access the web applications they may need for the work day, that is their only allowed inbound connection.
-  
-### VPC Setup*
-### IAM Setup*
-### KMS Setup*
-# Troubleshooting 
+![securitygroups1](https://github.com/user-attachments/assets/3683da29-1645-44b5-b472-6f6a8feeff61)
+- That is the security group for the engineering applications server and the admin/managment server.
+![securitygroups2](https://github.com/user-attachments/assets/c99f2a58-79da-4cbd-a284-b6e5f0d528ca)
+- That is the security group for the IT Management server. With the way the security groups are setup, it would be impossible to gain ssh access the Engineering server or the Management server, without first gaining access to the IT management server.
+
+### VPC Setup
+- We ran into some initial issues while trying to setup a vpc. While we were able to do the basics, modifying any real values or information within the vpc produced and lack of permisions error.
 - We were able to set up a VPC named "Main," for our admin/management server.
 <img width="718" alt="Screenshot 2024-08-19 at 6 17 41 PM" src="https://github.com/user-attachments/assets/58b8326f-3417-4aa4-9af4-478654349339">
 - The VPC worked with the three different subnets (Admin/Management (private subnet), IT and Engineering (both public)) with route tables meant to route network traffic to resources.
 - We were unable to proceed to connect our Instances to our VPC due to lack of permissions. From here, we noted that maybe a VPC was not possible, and rerouted to work on having only the Security Groups as a means of providing access among the various subnets
 <img width="175" alt="Screenshot 2024-08-19 at 6 24 29 PM" src="https://github.com/user-attachments/assets/bac5df40-41f8-4011-8bf4-708734a3fe1e">
 - * The issue was Route 53. *
- 
-- We additionally had issues IAM setup, saying that we lacked authorization/credentials.
+
+### IAM Setup
+- While setting up IAM, we ran into some additional issues due to lack of permission.
 <img width="633" alt="Screenshot 2024-08-19 at 6 27 07 PM" src="https://github.com/user-attachments/assets/b2d2dc60-4e14-4ed4-be68-3c2eb552e631">
-- Our goal was to create a role for "workers" in our mock company to access the subnets using identity access credentials managed through IAM to provide security.
+- Our goal was to create roles for "workers" in our mock company to access the subnets using identity access credentials managed through IAM to provide security.
 
-- We additionally ran into issues with the Key management Service.
+### KMS Setup
+- Due to the same lack of permissions issue, we were unable to make any signifigant changes within KMS. Our plan, was to only allow ssh access to the IT server for users within the IT IAM group, helping to increase security. With this change, not only would you need to have the IT server ssh key, but you would also need to have the correct permissions if you wanted to access the IT server, or either one of the other two servers.
 
+# Troubleshooting 
 -  After receiving elevated permissions from Professor Goldstein, we were successfully able to go back and deploy some of the systems that were giving us issues earlier.
 
 
