@@ -121,7 +121,7 @@ We are planning to do our research project around cloud services to securely sto
 # Troubleshooting 
 -  After receiving elevated permissions from Professor Goldstein, we were successfully able to go back and deploy some of the systems that were giving us issues earlier.
 
-→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→
+→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→
 -  After receiving elevated permissions from Professor Goldstein, we were successfully able to go back and deploy some of the systems that were giving us issues earlier.
 
 With elevated permissions, we launched the new EC2 Instances for Administration, Engineering, and IT servers.
