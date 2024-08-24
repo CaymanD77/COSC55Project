@@ -81,11 +81,14 @@ We are planning to do our research project around cloud services to securely sto
 # MILESTONE 3 - SYSTEM DEPLOYMENT
 
 ## Revisiting Milestone 2 Task 2
+
 ### Launch 2 Ubuntu Instances --> Engineering and IT Subnets
 - SSH Keys created.
+
 ### Launch Amazon Linux 2 --> Admin/Management Server
 - SSH Keys created and system management system established
-- Admin/Management Server would manage the keys and require Engineering/IT subnet "workers" to go through admin server to be able to log in (for further encryption/protection)
+- IT Management Server would manage the keys and require Engineering/IT subnet "workers" to go through the IT server to be able to log in (for further encryption/protection)
+
 ### Setting Up Buckets
 - While creating and accessing the buckets themselves was straightforward and proved successfull, We ran into issues trying to modify the accessibility of said buckets. We ran into these issues due to a lack of permissions error. We that initializing the buckets was enough for now, and that we would return to them later and try to modify their permissions so that only certain departments could access certain buckets.
 ![buckets1](https://github.com/user-attachments/assets/a094a8bf-0ab1-4186-a02a-8397d3a46f31)
