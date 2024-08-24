@@ -105,7 +105,7 @@ We are planning to do our research project around cloud services to securely sto
 - The VPC worked with the three different subnets (Admin/Management (private subnet), IT and Engineering (both public)) with route tables meant to route network traffic to resources.
 - We were unable to proceed to connect our Instances to our VPC due to lack of permissions. From here, we noted that maybe a VPC was not possible, and rerouted to work on having only the Security Groups as a means of providing access among the various subnets
 <img width="175" alt="Screenshot 2024-08-19 at 6 24 29 PM" src="https://github.com/user-attachments/assets/bac5df40-41f8-4011-8bf4-708734a3fe1e">
-- * The issue was Route 53. *
+- The issue was Route 53.
 
 ### IAM Setup
 - While setting up IAM, we ran into some additional issues due to lack of permission.
