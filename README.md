@@ -160,13 +160,13 @@ S3 →
 ## Milestone 3 Task 2 - Testing Functionality of our Environment
 
 # Validating authentication (Security Groups/SSH/Keys), network access (Web access/Communication), and necessary services (File sharing)
-- <img width="569" alt="Screenshot 2024-08-24 at 6 25 19 PM" src="https://github.com/user-attachments/assets/e8111f1e-cce7-4e74-b50f-e2102d8641ac">
+<img width="569" alt="Screenshot 2024-08-24 at 6 25 19 PM" src="https://github.com/user-attachments/assets/e8111f1e-cce7-4e74-b50f-e2102d8641ac">
 - [SSH into IT Server using IT Key]
--  <img width="572" alt="Screenshot 2024-08-24 at 6 26 58 PM" src="https://github.com/user-attachments/assets/7ec6c152-9bc4-4304-a016-0613ab630440">
+<img width="572" alt="Screenshot 2024-08-24 at 6 26 58 PM" src="https://github.com/user-attachments/assets/7ec6c152-9bc4-4304-a016-0613ab630440">
 - [sharedFolder contains access keys for all servers. Cayman uploaded these and Omar accessed them, so file sharing works.]
-- <img width="559" alt="Screenshot 2024-08-24 at 6 31 45 PM" src="https://github.com/user-attachments/assets/2b5c3e4a-8a91-4ce8-89b6-df4a01375aa6">
+<img width="559" alt="Screenshot 2024-08-24 at 6 31 45 PM" src="https://github.com/user-attachments/assets/2b5c3e4a-8a91-4ce8-89b6-df4a01375aa6">
 - [Ping from IT to Admin using 'ping (Private IP)' command. Demonstrates communication between servers.]
-- <img width="562" alt="Screenshot 2024-08-24 at 6 43 26 PM" src="https://github.com/user-attachments/assets/62f5e8c0-2255-4b5d-8cdf-9908884cdf78">
+<img width="562" alt="Screenshot 2024-08-24 at 6 43 26 PM" src="https://github.com/user-attachments/assets/62f5e8c0-2255-4b5d-8cdf-9908884cdf78">
 - [Accessed Admin server from IT using Admin Key in sharedFolder.]
 <img width="295" alt="Screenshot 2024-08-24 at 6 44 46 PM" src="https://github.com/user-attachments/assets/15a10134-ee51-46de-92c6-8e9b9a364e3c">
 - [Shared file in Admin Server to prepare for syncing the Bucket.]
