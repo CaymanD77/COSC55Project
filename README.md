@@ -121,5 +121,38 @@ We are planning to do our research project around cloud services to securely sto
 # Troubleshooting 
 -  After receiving elevated permissions from Professor Goldstein, we were successfully able to go back and deploy some of the systems that were giving us issues earlier.
 
+→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→
+-  After receiving elevated permissions from Professor Goldstein, we were successfully able to go back and deploy some of the systems that were giving us issues earlier.
 
+With elevated permissions, we launched the new EC2 Instances for Administration, Engineering, and IT servers.
+
+EC2 and Security Groups →
+
+- Each instance required a different PEM key for access - we were able to elevate read/write permissions to the keys using change mode 400 command (chmod400)
+- SSH Keys were created.
+
+For Basic Access, we ensured the new Security Groups established a secure connection for employees -
+- Using File Transfer Protocol, we stored all of the keys in the IT Server, requiring SSH into IT Server to retrieve all the keys (from there, other servers are manageable)
+- Proper filesharing access was establed between the servers by sharing keys
+
+- With FTP, we researched the commands to plan how to create and implement a database or directory which was accessible to all users with access to the server.
+-   We utilized 'sudo' to elevate permissons, 'chmod' (change mode), were able to change the directory using 'cd /.' to enter the '/' directory, and implemented groups/shared users via 'chgrp' command, creating a shared folder for both the IT and Admin servers.
+-     Finalproject_keys shared directory in IT server in '/' directory
+-     sharedFolder shared directory in IT server in 'finalproject_keys' directory'
+-     sharedFolder contains PEM keys for every server [Admin-Management-Key.pem, IT-Management-Key.pem, engineering-Key.pem]
+-   With keys, we were able to SSH into the Administration Linux instance from the IT instance, using the keys in the IT sharedFolder.
+-     Created another sharedFolder directory (shared directory) for users in the Administration server in the '/home/' directory.
+-     sharedFolder contains encrypted keys from the Key Management Service that protects the s3 buckets.
+-     S3 Buckets (administrationbucket) only accessible through Administration server. 
+
+
+IAM →
+- Created the Administrator role (ACCESS to S3 Bucket, 'administratorbucket')
+- Created the IT employee role (ACCESS to IT Bucket, ' backuplogsbucket')
+
+S3 →
+- Managed Storage:
+-   Added proper access to s3 buckets
+-   Attempted to nest s3 buckets within a directory on the servers themselves but ran into issues figuring out exactly how to go about doing that.
+-   Secured buckets with keys
 
