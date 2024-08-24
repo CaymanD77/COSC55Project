@@ -134,6 +134,7 @@ EC2 and Security Groups →
 For Basic Access, we ensured the new Security Groups established a secure connection for employees -
 - Using File Transfer Protocol, we stored all of the keys in the IT Server, requiring SSH into IT Server to retrieve all the keys (from there, other servers are manageable)
 - Proper filesharing access was establed between the servers by sharing keys
+- Utilized sftp command (Secure File Transfer Protocol) to get keys from our computers to IT Management Server
 
 - With FTP, we researched the commands to plan how to create and implement a database or directory which was accessible to all users with access to the server.
 -   We utilized 'sudo' to elevate permissons, 'chmod' (change mode), were able to change the directory using 'cd /.' to enter the '/' directory, and implemented groups/shared users via 'chgrp' command, creating a shared folder for both the IT and Admin servers.
@@ -155,4 +156,21 @@ S3 →
 -   Added proper access to s3 buckets
 -   Attempted to nest s3 buckets within a directory on the servers themselves but ran into issues figuring out exactly how to go about doing that.
 -   Secured buckets with keys
+
+## Milestone 3 Task 2 - Testing Functionality of our Environment
+
+# Validating authentication (Security Groups/SSH/Keys), network access (Web access/Communication), and necessary services (File sharing)
+- <img width="569" alt="Screenshot 2024-08-24 at 6 25 19 PM" src="https://github.com/user-attachments/assets/e8111f1e-cce7-4e74-b50f-e2102d8641ac">
+- [SSH into IT Server using IT Key]
+-  <img width="572" alt="Screenshot 2024-08-24 at 6 26 58 PM" src="https://github.com/user-attachments/assets/7ec6c152-9bc4-4304-a016-0613ab630440">
+- [sharedFolder contains access keys for all servers. Cayman uploaded these and Omar accessed them, so file sharing works.]
+- <img width="559" alt="Screenshot 2024-08-24 at 6 31 45 PM" src="https://github.com/user-attachments/assets/2b5c3e4a-8a91-4ce8-89b6-df4a01375aa6">
+- [Ping from IT to Admin using 'ping (Private IP)' command. Demonstrates communication between servers.]
+- <img width="562" alt="Screenshot 2024-08-24 at 6 43 26 PM" src="https://github.com/user-attachments/assets/62f5e8c0-2255-4b5d-8cdf-9908884cdf78">
+- [Accessed Admin server from IT using Admin Key in sharedFolder.]
+<img width="295" alt="Screenshot 2024-08-24 at 6 44 46 PM" src="https://github.com/user-attachments/assets/15a10134-ee51-46de-92c6-8e9b9a364e3c">
+- [Shared file in Admin Server to prepare for syncing the Bucket.]
+----------------------------------------------------------------------------------------------------------------------
+
+
 
