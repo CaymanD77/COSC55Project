@@ -1,9 +1,10 @@
-Test Case 1 - IT Employee
+## Test Case 1 - IT Employee
 
-* SSH into IT with IT Server Key
+### SSH into IT with IT Server Key
 <img width="1410" alt="TE1 1" src="https://github.com/user-attachments/assets/31626aff-1add-4ed3-b3c6-fb4e9851b1d4">
 <img width="1440" alt="TE1 2" src="https://github.com/user-attachments/assets/f6ee86a8-4e37-435e-badc-6f72a71ee09b">
-* Access IT Logs Bucket
+
+### Access IT Logs Bucket
 <img width="1193" alt="TE1 3" src="https://github.com/user-attachments/assets/4c974377-f321-4880-a8ad-0dece90aaafa">
 
 Process ~
@@ -29,6 +30,3 @@ Test Case 2 - Administration
 * Admin accessing the web browser
 * PHP Code for Login Page -
 * PHP Code for Home Screen -
-
-Test Case 3 - Adversary
-* Adversary denied access
