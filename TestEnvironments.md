@@ -22,7 +22,7 @@ This will work as our Test Environment.
 We modified the IAM Role/Assigned it to our IT Server, so that the server could gain S3 permissions. We then researched the methods for connecting S3 to the IT server, and ended up attempting to install s3-mount package from the AWS website.
 - https://aws.amazon.com/s3/features/mountpoint/ </br>
 
--   Installed s3-mount package from AWS website;
+-   Installed s3-mount package from AWS website; </br>
 We used the following command: _wget https://s3.amazonaws.com/mountpoint-s3-release/latest/x86_64/mount-s3.deb_
 We intially attempted with mount-s3.rpm, but after troubleshooting, we switched to .deb. We then installed the dependencies necessary for the s3 mount to work with our server, using the following command: _sudo apt-get install libfuse2_
 
