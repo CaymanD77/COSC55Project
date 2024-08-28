@@ -33,6 +33,12 @@ We utilized the --classic to enable the traditionally packaged application, with
 
 We then used mkdir to create a directory named itbuckets in the finalproject_keys shared folder. We then used the _mount-s3 itbackuplogs itbuckets_ command to mount the itbackuplogs directory in the itbuckets directory, inside of the IT server.
 
+![Te 1 5](https://github.com/user-attachments/assets/474e9e01-e82b-4a99-8a61-d611f4a6647c) </br>
+- All of the S3 files being accessed.
+
+![TE14](https://github.com/user-attachments/assets/dd8da387-f4d7-498b-95dd-ce8caadd99d1) </br>
+- Accessing itbuckets log via srrver.
+
 Test Environment 1 - Complete.
 Now, only authorized admin users on the IT server, can access the IT bucket which contains backups and logs for the other servers.
 - https://www.youtube.com/watch?v=GSsrnnU9JLw 
