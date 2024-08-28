@@ -172,7 +172,24 @@ S3 →
 - [Shared file in Admin Server to prepare for syncing the Bucket.]
 - <img width="295" alt="Screenshot 2024-08-24 at 6 44 46 PM" src="https://github.com/user-attachments/assets/15a10134-ee51-46de-92c6-8e9b9a364e3c">
 
+----------------------------------------------------------------------------------------------------------------------
+# MILESTONE 4 - DATABASE ENHANCEMENTS
 
+## Cloud Security Solution
 
+- Creation of a Mock Company with the original topic --> Services to securely store, retrieve, and rotate database credentials, API keys, and other sensitive information
 
+We created different authorization groups in order to provide specific access information for different users, requiring authorizaiton to access any important servers or services (IT, Admin/Management, Engineering Servers).
 
+We utilized:
+- Identity Access Manager (IAM) to create roles and authorize access to S3 and other services.
+- Key Management Service (KMS) to create encrypted symmetric keys for S3 buckets and other aspects.
+- Attempted to CloudWatch and VPCs.
+- Unique security groups to manage access to different servers.
+- S3 Buckets to securely store backup logs for IT
+- MySQL, PHP, and HTML to create a secure user database in the IT server, accessed from the admin server containing stored username and passwords that authorize login on the web server.
+* In a real scenario, our database would be more secure, but for testing we focused on utilizing the MySQL database. We utilized as we had prior knowledge from our course notes.
+
+Our Project Progress is documented on the ReadMe, outlined in Milestones 1-3. Our TestEnvironments.md contains the documentation from our testing and final work on Milestone 4. This includes testing access to the IT server from a Remote Desktop Server (RDS) launched in a separate region, and access to the Admin server in which we created the PHP script, and the web server in which the logins were tested.
+
+----------------------------------------------------------------------------------------------------------------------
