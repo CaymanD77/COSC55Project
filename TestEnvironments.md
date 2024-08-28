@@ -47,9 +47,38 @@ Now, only authorized admin users on the IT server, can access the IT bucket whic
 
 # Test Case 2 - Administration
 
+## Set Up Apache HTTP Server
+- We set up the HTTPD Server following our notes from COSC55. Since we were working with the ubuntu IT server (as opposed to redhat/linux) we researched how to transform the commands. Rather than _yum_ we utilized _apt-get and apt_, additionally using _apache2_ as opposed to _httpd_.
+- We installed SQL and MariaDB, and PHP.
+
 ## Administrator logs into IT with IT Server Key
-* ADMIN logs into IT with IT Server Key
-* Retrieves Administration Key and SSH into ADMIN Server from IT
-* Admin accessing the web browser
-* PHP Code for Login Page -
-* PHP Code for Home Screen -
+- We logged onto the admin server after retrieving the key from the IT sharedFolder using ssh.
+_ssh -i Desktop\TestEnvironment\Admin-Management-Key.pem ec2-user@server_IP_
+
+- Again, we set up the HTTPD server, this time on the linux and created the 'users' database in mariadb.
+![te2 1](https://github.com/user-attachments/assets/9fb85430-6bfc-4660-8a00-09e3b9a09db2) </br>
+
+- We set up the login table within the 'users', created the username and password tables, and additionally created various username and passwords.
+![te2 2](https://github.com/user-attachments/assets/7ad8fca5-b89b-4d8e-9ba1-536bbb4cd0ad) </br>
+
+- We then focused on creating the PHP login page from the admin server.
+
+## PHP Code for Login Page -
+<img width="627" alt="Screenshot 2024-08-27 at 8 37 36 PM" src="https://github.com/user-attachments/assets/091e0dde-5b18-41d1-9f5b-4466d9cbe8f4"> </br>
+<img width="638" alt="Screenshot 2024-08-27 at 8 38 51 PM" src="https://github.com/user-attachments/assets/fc0040e6-ac21-4a56-9c0d-70c74ef2376b"> </br>
+
+## PHP Login Examples from Admin Accessing the Web Server
+
+- Omar logging in, login accepted from php code.
+<img width="717" alt="Screenshot 2024-08-27 at 8 39 15 PM" src="https://github.com/user-attachments/assets/70bc531c-f46c-4e2b-888c-d5481c0159f2"> </br>
+
+- Cayman logging in, login accepted from php code.
+<img width="714" alt="Screenshot 2024-08-27 at 8 40 26 PM" src="https://github.com/user-attachments/assets/6c924017-e468-43af-83a5-e809b967b763"> </br>
+
+- Unknown login, login rejected.
+<img width="686" alt="Screenshot 2024-08-27 at 8 40 49 PM" src="https://github.com/user-attachments/assets/f51541f5-7e03-4765-bbc8-74587e66273b"> </br>
+
+Test Environment 2 - Complete.
+Now, only authorized admin users can access the database, and only authorized users can log into the company site.
+
+
